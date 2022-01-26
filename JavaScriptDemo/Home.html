@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function add() {
+            var first = document.getElementById('first').value;
+            var second = document.getElementById('Second').value;
+
+            var n1 = parseInt(first);
+            var n2 = parseInt(second);
+
+            var Result = n1 + n2;
+
+            document.getElementById('Result').value = Result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Add 2 numbers</h1>
+    <table>
+        <tr>
+            <td>First Number</td>
+            <td><input type="text" id="first" /></td>
+        </tr>
+        <tr>
+            <td>Second Number</td>
+            <td><input type="text" id="Second" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><input type="button" value="Add" onclick="add()"</td>
+
+        </tr>
+        <tr>
+            <td>Addition</td>
+            <td><input type="text" id="Result" readonly /></td>
+        </tr>
+    </table>
+</body>
+</html>
